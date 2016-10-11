@@ -30,6 +30,21 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'SpaVS/Views/auftragdetails.html',
         controller: 'auftragdetailsController'
     }).
+
+    when('/auftragerstellen', {
+        templateUrl: 'SpaVS/Views/auftragerstellen.html',
+        controller: 'auftragerstellenController'
+    }).
+
+    when('/mitarbeiteruebersicht', {
+        templateUrl: 'SpaVS/Views/mitarbeiteruebersicht.html',
+        controller: 'mitarbeiteruebersichtController'
+    }).
+
+    when('/mitarbeiterdetails', {
+        templateUrl: 'SpaVS/Views/mitarbeiterdetails.html',
+        controller: 'mitarbeiterdetailsController'
+    }).
  
     otherwise({
         redirectTo: '/dashboard'
@@ -60,4 +75,7 @@ mainApp.controller('dashboardController', dashboardController);
 * mainApp.controller('auftragController', auftragController);
 * Zur Beschreibung siehe Kommentar(4)
 */
-mainApp.controller('auftragController', auftragController);
+mainApp.controller('auftragdetailsController', auftragdetailsController);
+mainApp.controller('auftragerstellenController', auftragerstellenController);
+mainApp.controller('mitarbeiteruebersichtController', mitarbeiteruebersichtController);
+mainApp.controller('mitarbeiterdetailsController', mitarbeiterdetailsController);
