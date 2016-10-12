@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="utf-8"/>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index VS</title>
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Index VS</title>
 
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/fonts/Material-Design-Icons.svg'>
+ <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+ <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.css'>
+ <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.css'>
+ <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.css'>
+ <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.css'>
+ <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/fonts/Material-Design-Icons.svg'>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
 
-    <script src="SpaVS/js/Controllers/dashboardController.js"></script>
-    <script src="SpaVS/js/Controllers/auftragdetailsController.js"></script>
-    <script src="SpaVS/js/Controllers/auftragerstellenController.js"></script>
-    <script src="SpaVS/js/Controllers/mitarbeiteruebersichtController.js"></script>
+ <script src="SpaVS/js/Controllers/dashboardController.js"></script>
+ <script src="SpaVS/js/Controllers/auftragdetailsController.js"></script>
+ <script src="SpaVS/js/Controllers/auftragerstellenController.js"></script>
+ <script src="SpaVS/js/Controllers/mitarbeiteruebersichtController.js"></script>
 
-    <script src="SpaVS/js/Controllers/mitarbeiterdetailsController.js"></script>
+ <script src="SpaVS/js/Controllers/mitarbeiterdetailsController.js"></script>
 
-    <script type="text/javascript" src="route.js"></script>
-  </head>
-  <body ng-app ="mainApp">
+ <script type="text/javascript" src="route.js"></script>
+</head>
+<body ng-app ="mainApp">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="javascript:void(0)">ProTailor</a>
-        </div>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)">ProTailor</a>
+    </div>
 
-        <div class="navbar-collapse collapse navbar-warning-collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#dashboard">Übersicht</a></li>
-                <li><a href="#auftragdetails">Auftrag</a></li>
-                <li><a href="#auftragerstellen">Auftragerstellen</a></li>
-                 <li><a href="#mitarbeiteruebersicht">Mitarbeiterübersicht</a></li>
-                 <li><a href="#mitarbeiterdetails">mitarbeiterdetails</a></li>
-              </ul>
-    
-        <form class="navbar-form navbar-left">
-            <input type="text" class="form-control col-lg-8" placeholder="Search">
-        </form>
+    <div class="navbar-collapse collapse navbar-warning-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#dashboard">Übersicht</a></li>
+        <li><a href="#auftragdetails">Auftragdetails</a></li>
+        <li><a href="#auftragerstellen">Auftragerstellen</a></li>
+        <li><a href="#mitarbeiteruebersicht">Mitarbeiterübersicht</a></li>
+        <li><a href="#mitarbeiterdetails">mitarbeiterdetails</a></li>
+      </ul>
+      
+      <form class="navbar-form navbar-left">
+        <input type="text" class="form-control col-lg-8" placeholder="Search">
+      </form>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="javascript:void(0)">Link</a></li>
-      <li class="dropdown">
-        <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="javascript:void(0)">Action</a></li>
-          <li><a href="javascript:void(0)">Another action</a></li>
-          <li><a href="javascript:void(0)">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="javascript:void(0)">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
+        <li><a href="javascript:void(0)">Link</a></li>
+        <li class="dropdown">
+          <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)">Action</a></li>
+            <li><a href="javascript:void(0)">Another action</a></li>
+            <li><a href="javascript:void(0)">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="javascript:void(0)">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
 
-        <!--navbar ende -->
-        <div class="container body-content">
-            <div ng-view></div>
+  <div class="container body-content">
+    <div ng-view></div>
 
-        </div>
+  </div>
 
-  </body>
+</body>
 </html>

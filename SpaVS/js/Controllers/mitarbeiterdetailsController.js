@@ -1,5 +1,8 @@
 var mitarbeiterdetailsController = function ($scope) {
-    $scope.message = "Mitarbeiterdetails!";
+    $scope.message = "disabled";
+
+    $scope.vorname= "Max";
+    $scope.nachname="Mustermann"
 };
 
 mitarbeiterdetailsController.$inject = ['$scope'];
