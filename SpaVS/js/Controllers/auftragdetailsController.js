@@ -1,5 +1,5 @@
 ﻿var auftragdetailsController = function ($scope) {
-    $scope.message = "Hier kommen die Aufträge hin!";
+    $scope.message = "KDI";
 };
 
 auftragdetailsController.$inject = ['$scope'];
