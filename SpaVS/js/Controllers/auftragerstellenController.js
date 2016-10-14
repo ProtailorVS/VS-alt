@@ -3,4 +3,3 @@ var auftragerstellenController = function ($scope) {
 };
 
 auftragerstellenController.$inject = ['$scope'];
-

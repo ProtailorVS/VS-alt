@@ -2,6 +2,7 @@
 <br>
 <br>
 <h1>Auftrag ID + Kundename (Überschrift)</h1>
+<label>Daten bearbeiten <input type="checkbox" ng-model="checked"></label><br/>
 <br>
 <!--..............................Panel: Auftragsbeschreibung, Hinweistext...............................-->
 <div class="row">
@@ -15,24 +16,24 @@
 					<!--..............................Eingabe: Auftragsart, Anzahl der Stunden...............................-->
 					<div class="row">
 						<div class="col-lg-4">
-							<input type="text" class="form-control" id="auftragsart" value={{message}}>
+							<input ng-model="inputart" ng-disabled="checked" type="text" class="form-control" id="auftragsart" value={{message}}>
 							<label for="inputDefault">Auftragsart</label>		
 						</div>
 
 						<div class="col-lg-6">
-							<input type="text" class="form-control" id="anzahlderstd">
+							<input ng-model="inputstd" ng-disabled="checked" type="text" class="form-control" id="anzahlderstd">
 							<label for="inputDefault">Anzahl der Stunden</label>	
 						</div>
 					</div>
 					<!--..............................Eingabe: status, zugewiesener Mitarbeiter...............................-->
 					<div class="row">
 						<div class="col-xs-4">
-							<input type="text" class="form-control" id="status">
+							<input ng-model="inputstatus" ng-disabled="checked" type="text" class="form-control" id="status">
 							<label for="inputDefault">Status</label>		
 						</div>
-
+						
 						<div class="col-xs-6">
-							<input type="text" class="form-control" id="zugmitarbeiter">
+							<input ng-model="inputzumit" ng-disabled="checked" type="text" class="form-control" id="zugmitarbeiter">
 							<label for="inputDefault">Zugewiesener Mitarbeiter</label>	
 						</div>
 					</div>	
