@@ -5,7 +5,7 @@
  * Ruten sind wie Wegweiser, sie ordnen einem link eine
 * den vollständigen Pfad zu einer Datei zu. 
  */
-var mainApp = angular.module("mainApp", ['ngRoute']);
+var mainApp = angular.module("mainApp", ['ngRoute','ui-bootstrap']);
  
 /* |------------------------------------------------------------------------------------Kommentar(2)
 * mainApp.config(['$routeProvider', function ($routeProvider)
@@ -51,6 +51,19 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
     });
 }]);
  
+mainApp.controller('homeController', function ($scope, $location, $modal, DataService){
+
+$scope.showCreateEmployeeForm = function (){
+
+    $modal.open({
+        templateUrl:'SpaVS/Views/dashboard.html',
+        controller: 'dashboardController'
+    });
+};
+
+});
+
+
 /* |------------------------------------------------------------------------------------Kommentar(3)
 * Def bzw. Deklaration und Implementierung eines Cotrollers innerhalb einer datei
 */
