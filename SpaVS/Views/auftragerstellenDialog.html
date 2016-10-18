@@ -1,0 +1,194 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>neuen Auftrag erstellen</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+
+<div class="row">
+	<div class="col-lg-12">
+		<h3>Anschriften</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="bs-component">
+			<div class="panel panel-default">
+				<div class="panel-heading">Kundenadresse</div>
+				<div class="panel-body well well-sm">
+					<!--..............................Eingabe: Vorname, Nachname...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="vornamek">
+							<label for="inputDefault">Vorname</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="nachnamek">
+							<label for="inputDefault">Nachname</label>	
+						</div>
+					</div>
+					<!--..............................Eingabe: Straße, Hausnummer...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="strassek">
+							<label for="inputDefault">Straße</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="hsnrk">
+							<label for="inputDefault">Hs.-Nr.</label>	
+						</div>
+					</div>
+					<!--..............................Eingabe: plz, ort...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="plzk" placeholder="XXXXX">
+							<label for="inputDefault">PLZ</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="ortk">
+							<label for="inputDefault">Ort</label>	
+						</div>
+					</div>
+					<!--..............................Eingabe: telefon, mobil...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="telefonk">
+							<label for="inputDefault">Telefonnummer</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="mobilk">
+							<label for="inputDefault">Mobil</label>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="bs-component">
+			<div class="panel panel-default">
+				<div class="panel-heading">Rechnungsadresse</div>
+
+				<div class="panel-body well well-sm">
+					<!--..............................Eingabe: Vorname, Nachname...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="vornamer">
+							<label for="inputDefault">Vorname</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="nachnamer">
+							<label for="inputDefault">Nachname</label>	
+						</div>
+					</div>
+					<!--..............................Eingabe: Straße, Hausnummer...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="strasser">
+							<label for="inputDefault">Straße</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="hsnrr">
+							<label for="inputDefault">Hs.-Nr.</label>	
+						</div>
+					</div>
+					<!--..............................Eingabe: plz, ort...............................-->
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="plzr" placeholder="XXXXX">
+							<label for="inputDefault">PLZ</label>		
+						</div>
+
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="ortr">
+							<label for="inputDefault">Ort</label>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--..............................Panel: Auftragsbeschreibung, Hinweistext...............................-->
+<div class="row">
+	<div class="col-lg-12">
+		<h3>Informationen über den Auftrag</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="bs-component">
+			<div class="panel panel-default">
+				<div class="panel-heading">Auftragsbeschreibung</div>
+				<div class="panel-body well well-sm">
+					<textarea class="form-control noresize" rows="3" id="auftragsbeschreibung"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="bs-component">
+			<div class="panel panel-default">
+				<div class="panel-heading">Hinweis für den Mitarbeiter</div>
+				<div class="panel-body well well-sm">
+					<textarea class="form-control noresize" rows="3" id="hinweismitarbeiter"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--..............................Panel: Mitarbeiterzuweisen...............................-->
+<div class="row">
+	<div class="col-lg-12">
+		<h3>Mitarbeiter zuweisen</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="bs-component">
+			<div class="panel panel-default">
+				<div class="panel-heading">Liste der Mitarbeiter</div>
+				<div class="panel-body well well-sm">
+					<textarea class="form-control noresize" rows="3" id="auftragsbeschreibung"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+      </div>
+
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <!-- <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+        More on Wikipedia
+      </md-button> -->
+      <span flex></span>
+      <md-button ng-click="answer('abgebrochen')">
+       Abbrechen
+      </md-button>
+      <md-button ng-click="answer('angelegt')">
+       Auftrag anlegen
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
